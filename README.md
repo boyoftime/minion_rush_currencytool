@@ -22,13 +22,44 @@
 
 ---
 
+## 🖥️ GUI Preview
+
+<p align="center">
+  A clean and simple interface designed for quick currency editing.
+</p>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>🍌 Currency Tool</strong>
+    </td>
+    <td align="center" width="50%">
+      <strong>❤️ About & Credits</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./minion1.png" alt="Minion Rush Currency Tool interface" width="100%">
+    </td>
+    <td align="center">
+      <img src="./minion2.png" alt="Minion Rush Currency Tool About page" width="100%">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <sub>Currency controls, live game detection, safety backups, and project credits.</sub>
+</p>
+
+---
+
 ## ✨ About the Tool
 
 **Minion Rush Currency Tool** is a portable Windows application that lets you add a custom amount of Bananas and Tokens to the supported PC version of Minion Rush.
 
 Instead of copying a save file created on another computer, the tool communicates with the running game and asks the game to apply, protect, and save the new balances using its own native routines.
 
-This makes the resulting save specific and valid for the computer on which it was created.
+This makes the resulting save valid for the computer on which it was created.
 
 ## ✅ Features
 
@@ -38,10 +69,11 @@ This makes the resulting save specific and valid for the computer on which it wa
 - 💾 Create a timestamped backup before every change
 - 🔍 Verify the exact supported game build before writing
 - ✅ Confirm that the protected save changed successfully
-- 🖥️ Simple, responsive, non-resizable interface
+- 🖥️ Simple and responsive graphical interface
+- 📐 Fixed and non-resizable window
 - 📦 Standalone EXE — Python is not required
 - 🚫 No CMD or PowerShell scripts required
-- ❤️ Includes Someless Tricks branding and credits
+- ❤️ Someless Tricks branding and credits
 
 > [!IMPORTANT]
 > The values entered are amounts to **add**, not the final balances.  
@@ -68,21 +100,23 @@ The tool intentionally refuses to modify unknown or incompatible game builds.
 
 ## 🚀 How to Use
 
-1. Download and extract the Currency Tool.
-2. Launch Minion Rush normally.
-3. Wait until the game reaches its main menu.
-4. Open `MinionRushModder.exe`.
-5. Confirm that the tool detects the running game.
-6. Enter the Bananas and/or Tokens you want to add.
-7. Click **Add to Game**.
-8. Wait for the success confirmation.
-9. Restart the game if you want to confirm persistence.
+1. Download the Currency Tool.
+2. Extract the downloaded ZIP file.
+3. Launch Minion Rush normally.
+4. Wait until the game reaches its main menu.
+5. Open `MinionRushModder.exe`.
+6. Confirm that the tool detects the running game.
+7. Enter the Bananas and/or Tokens you want to add.
+8. Click **Add to Game**.
+9. Wait for the success confirmation.
+10. Restart the game to confirm that the balances were saved.
 
-Both the game and tool must run under the same interactive Windows account.
+> [!NOTE]
+> The game and the Currency Tool must run under the same interactive Windows account.
 
 ## 🧠 How It Works
 
-The tool uses a method called a **trusted in-process save update**:
+The tool uses a **trusted in-process save update**:
 
 ```text
 Launch the supported game
@@ -116,10 +150,10 @@ Keep these backups until you have restarted the game and confirmed that everythi
 |---|---|
 | Game not running | Launch Minion Rush and wait at the main menu |
 | Unsupported game build | Confirm that you have version `4.1.4.1 x86` |
-| Add button is disabled | Click **Refresh** after the game reaches its menu |
+| Add button is disabled | Click **Refresh** after reaching the game menu |
 | Access denied | Run the game and tool under the same Windows account |
 | Balance is unchanged | Restart the game and check the balance again |
-| Antivirus warning | The EXE is unsigned and accesses a running process; review the source or build it yourself instead of disabling Windows security |
+| Antivirus warning | Review the source or build it yourself instead of disabling Windows security |
 
 ## 🧑‍💻 Running From Source
 
@@ -135,7 +169,17 @@ To inspect the protected balances without changing them:
 python .\minion_native_mod.py --read-only
 ```
 
-More technical details are available in [NATIVE-MOD-README.md](./NATIVE-MOD-README.md).
+More technical details are available in:
+
+[📖 NATIVE-MOD-README.md](./NATIVE-MOD-README.md)
+
+## 📥 Download
+
+Download the standalone Windows Currency Tool:
+
+[![Download](https://img.shields.io/badge/Download-Minon_Rush_Currency_Tool-2EA44F?style=for-the-badge&logo=windows)](https://www.mediafire.com/file/j8cid0dtv4d1mmo/MinionRushCurrencytool.zip/file)
+
+No Python, CMD, or PowerShell installation is required.
 
 ## ⚠️ Disclaimer
 
@@ -144,7 +188,7 @@ This is an unofficial, fan-made utility created for educational and personal use
 - Use it only with game files you legally own.
 - Always keep a backup of your save.
 - Never download unknown copies from untrusted sources.
-- The project is not affiliated with, sponsored by, or endorsed by Gameloft, Illumination, Universal, or their partners.
+- This project is not affiliated with Gameloft, Illumination, Universal, or their partners.
 - Use the tool at your own risk.
 
 ## ❤️ Credits
@@ -158,7 +202,7 @@ This is an unofficial, fan-made utility created for educational and personal use
 </p>
 
 <p align="center">
-  Made with ❤️ for everyone who supported the Someless Tricks journey.
+  Made with ❤️ for all the fans and supporters of Someless Tricks.
 </p>
 
 ---
