@@ -1,0 +1,5 @@
+TRICK : Trusted In-Process Save Forging
+Details 
+It calls the game’s own currency and save functions from inside its running process. 
+The game treats the values as legitimate, applies its protection/encoding, 
+and writes a valid modded save itself—no password or credential needed.
